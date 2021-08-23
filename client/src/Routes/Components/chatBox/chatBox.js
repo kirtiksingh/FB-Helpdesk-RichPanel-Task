@@ -1,6 +1,8 @@
 import { Avatar } from "@material-ui/core";
 // import { useSession } from "next-auth/client";
 import React from "react";
+import { useContext } from 'react';
+import { AuthContext } from '../../Controllers/authProvider';
 
 import styles from "./chatBox.module.scss";
 
@@ -14,6 +16,7 @@ const options = {
 };
 
 export const ChatBox = ({ item: { fname, lname, chats, profile } }) => {
+  const {currentUser} = useContext(AuthContext);
   // const [session] = useSession();
 
   const date = new Date();
@@ -53,11 +56,11 @@ export const ChatBox = ({ item: { fname, lname, chats, profile } }) => {
                     <Chat key={i} message={message} />
                   ))}
                   <small className={styles.date}>
-                    {/* {session && session.user.name} {timeStamp} */}
+                    {currentUser && currentUser.name} {timeStamp}
                   </small>
                 </div>
                 <div className={styles.avatar}>
-                  {/* <Avatar src={session && session.user.image} /> */}
+                  <Avatar src={currentUser && currentUser.picture} />
                 </div>
               </div>
             </div>

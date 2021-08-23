@@ -29,9 +29,9 @@ const FBSampleData = [
     },
 
     chats: [
-      ["nesdhfk  jhsdf kjhsdfk jw message"],
-      ["replay 1", "replay 2"],
-      ["another message"],
+      ["Is it in stock right now?"],
+      ["We've 3 left in stock!", "If you order before 8PM we can ship it today."],
+      ["Another message"],
     ],
   },
   {
