@@ -29,7 +29,7 @@ export const ChatBox = ({ item: { fname, lname, chats, profile } }) => {
     <div className={styles.chatBox}>
       <div className={styles.history}>
         {chats.map((message, idx) => {
-          return idx % 2 == 0 ? (
+          return idx % 2 === 0 ? (
             <div key={idx} className={styles.leftChats}>
               <div className={styles.chatItem}>
                 <div className={styles.avatar}>

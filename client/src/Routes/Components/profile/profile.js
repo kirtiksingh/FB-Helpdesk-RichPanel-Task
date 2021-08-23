@@ -38,7 +38,10 @@ export const Profile = ({ item: { id, fname, lname, profile, email } }) => {
           <div className={styles.value}>{lname}</div>
         </div>
         <div className={styles.row}>
-          <a className={styles.link}>View more details</a>
+         {/* eslint-disable-next-line */}
+          <a href='#' className={styles.link}>
+            View more details
+          </a>
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
-import { style } from "@material-ui/system";
-import React, { useState } from "react";
+
+import React from "react";
 
 import styles from "./item.module.scss";
 

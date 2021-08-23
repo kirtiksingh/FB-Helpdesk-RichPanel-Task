@@ -2,7 +2,7 @@ import { useState } from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import { AccountCircle, Menu, MenuBook } from "@material-ui/icons";
+import { AccountCircle, Menu } from "@material-ui/icons";
 import RefreshIcon from "@material-ui/icons/Refresh";
 import styles from "./styles/Home.module.scss";
 // import { useState } from "react";

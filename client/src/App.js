@@ -1,16 +1,9 @@
 import "./App.css";
-import Main from "./Routes/Components/Main";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import { AuthContext } from "./Routes/Controllers/authProvider";
 import Login from "./Routes/Auth/Login";
 import { useState } from "react";
-import Navbar from "./Routes/Components/Navbar";
-// import Head from "next/head";
-// import Image from "next/image";
-import logo from "./White.png";
-
-// import { useSession, signIn, signOut } from "next-auth/client";
 import Home from "./Home";
 
 const App = () => {
