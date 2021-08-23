@@ -13,7 +13,7 @@ mongoose
     "mongodb+srv://kirtiksingh:kirtik1234@cluster0.84zpy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
-  .then(() => console.log("Database Connected"))
+  .then(() => console.log("Database Connection Established"))
   .catch((err) => console.log(err));
 
 // parse application/x-www-form-urlencoded

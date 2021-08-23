@@ -25,7 +25,7 @@ const Login = ({ history }) => {
           pages,
         };
         axios
-          .post("http://https://fb-helpdesk-rich-panel-backend.vercel.app/api/auth", userObj)
+          .post("https://fb-helpdesk-rich-panel-backend.vercel.app/api/auth", userObj)
           .then((response) => {
             setCurrentUser(response.data);
             setLoading(false);
